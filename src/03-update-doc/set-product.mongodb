@@ -1,0 +1,121 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 1: Disfraz ',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 9},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 9: Alimento',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 5},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 5: Carnaza',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 2},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 2: Ropa de cachorro',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 19},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 19: Pañoletas',
+      price: 3000,
+    }
+  }
+)
+db.products.updateOne(
+  // query
+  {_id: 15},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 15: Huesos ',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 20},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 20: Perlas',
+      price: 3000,
+    }
+  }
+)
+db.products.updateOne(
+  // query
+  {_id: 16},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 16: Let recargable',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 10},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 10: Chunky',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  // query
+  {_id: 13},
+  // change => operators
+  {
+    $set: {
+      name: 'Product 13: Juguete  ',
+      price: 3000,
+    }
+  }
+)
