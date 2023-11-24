@@ -1,0 +1,169 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Prodcut 1",
+    price: 100,
+    description: "Dizfraz para perro - Chucky",
+    category: "Ropa para perros",
+    images: "https://http2.mlstatic.com/D_NQ_NP_906471-CBT69883223107_062023-O.webp"
+  },
+  {
+    _id: 2,
+    name: "Prodcut 2",
+    price: 20,
+    description: "Ropa para invierno",
+    category: "Ropa para perros",
+    images: "https://m.media-amazon.com/images/I/61kTU9LHRRL._AC_SL1500_.jpg"
+  },
+  {
+    _id: 3,
+    name: "Prodcut 3",
+    price: 120,
+    description: "Petit paws",
+    category:"Ropa para perros",
+    images: "https://petitpaws.com.co/cdn/shop/collections/moda-para-perros_1200x1200.jpg?v=1676609419"
+
+  },
+  {
+    _id: 4,
+    name: "Prodcut 4",
+    price: 120,
+    description: "DENTASTIX Higiene oral diaria",
+    category: "Higiene para perros",
+    images:"https://www.pedigree.es/content/img/products/landing/treats.png"
+  },
+  {
+    _id: 5,
+    name: "Prodcut 5",
+    price: 120,
+    description: "Carnaza para perro",
+    category: "Premios para perros",
+    images:"https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750155640745l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+  },
+  {
+    _id: 6,
+    name: "Prodcut 6",
+    price: 120,
+    description: "Churrasco para perro",
+    category: "Premios para perros",
+    images:"https://dcdn.mitiendanube.com/stores/131/324/products/smoochies1-be68849b862a9b68d715202820212645-1024-1024.jpg"
+  },
+  {
+    _id: 7,
+    name: "Prodcut 7",
+    price: 120,
+    description: "Carne asada para perro",
+    category: "Premios para perros",
+    images:"https://www.kiwoko.com/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw3cdabf66/images/sticks_perros_2&snacks_carne_asada_TNS40970.jpg?sw=385&sh=385"
+  },
+  {
+    _id: 8,
+    name: "Prodcut 8",
+    price: 120,
+    description: "Cuido rico en proteina, vitaminas y equilibrio de fibra y energia",
+    category: "Cuido para perros",
+    images:"https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/7/7/7703090954019_40.jpg"
+  },
+  {
+    _id: 9,
+    name: "Prodcut 9",
+    price: 120,
+    description: "Alimento humedo para perro PEDIGREE",
+    category: "Premios",
+    images:"https://petcol.co/cdn/shop/products/TAMANODEPRODUCTOSMesadetrabajo2_600x.jpg?v=1640207330"
+  },
+  {
+    _id: 10,
+    name: "Prodcut 10",
+    price: 120,
+    description: "Alimento chunky para perros",
+    category: "Comida para perros",
+    images:"https://lavaquita.co/cdn/shop/products/supermercados_la_vaquita_supervaquita_alimento_chunky_perros_395g_pollo_alimento_para_perros_1024x1024.jpg?v=1626957898"
+  },
+  {
+    _id: 11,
+    name: "Prodcut 11",
+    price: 120,
+    description: "Juguetes masticables para perros",
+    category: "Juguetes para perros",
+    images:"https://m.media-amazon.com/images/I/813qlU1qUfL.jpg"
+  },
+  {
+    _id: 12,
+    name: "Prodcut 12",
+    price: 120,
+    description: "Pelota para perros",
+    category: "Juguetes para perros",
+    images:"https://www.bazzarbog.com/66376-large_default/juguete-para-perros.jpg"
+  },
+  {
+    _id: 13,
+    name: "Prodcut 13",
+    price: 120,
+    description: "Kong classic",
+    category: "Juguetes para perros",
+    images:"https://petmas.masfinca.com/wp-content/uploads/2018/04/classic3_1024x1024.png"
+  },
+  {
+    _id: 14,
+    name: "Prodcut 14",
+    price: 120,
+    description: "Huesos para perros",
+    category: "Snack para perros",
+    images:"https://t2.ea.ltmcdn.com/es/posts/5/0/6/huesos_de_piel_de_vaca_4605_2_600.jpg"
+  },
+  {
+    _id: 15,
+    name: "Prodcut 15",
+    price: 120,
+    description: "Fresh natural huesos masticables de colores para perros",
+    category: "Snack para perros",
+    images:"https://freshpetnutrition.com/wp-content/uploads/2022/06/FN22-2.jpg"
+  },
+  {
+    _id: 16,
+    name: "Prodcut 16",
+    price: 120,
+    description: "Collar con led recargable para perros",
+    category: "Accesorios",
+    images:"https://http2.mlstatic.com/D_NQ_NP_981058-MCO50060466733_052022-O.webp"
+  },
+  {
+    _id: 17,
+    name: "Prodcut 17",
+    price: 120,
+    description: "Collar para perros modelo top rope",
+    category: "Accesorios para perros",
+    images:"https://www.latiendadefrida.com/cdn/shop/products/Web-25503-Top-Rope-Collar-Blue-Dusk.jpg?v=1619235334"
+  },
+  {
+    _id: 18,
+    name: "Prodcut 18",
+    price: 120,
+    description: "Collares para perritos",
+    category: "Accesorios para perros",
+    images:"https://vetplan.es/wp-content/uploads/2020/01/elegir-collar-perro.png"
+  },
+  {
+    _id: 19,
+    name: "Prodcut 19",
+    price: 120,
+    description: "Collares para perros con pañoleta",
+    category: "Accesorios",
+    images:"https://acdn.mitiendanube.com/stores/068/331/products/4-tama-o-ajustable-del-gato-del-perrito-del-collar-de-perro-collar-de-bufanda-para-jpg_640x64011-ec1aa8c1c62d59861815309070060749-640-0.jpg"
+  },
+  {
+    _id: 20,
+    name: "Prodcut 20",
+    price: 120,
+    description: "Collar de perlas para perros",
+    category: "Accesorios para perros",
+    images:"https://i.pinimg.com/550x/c8/b3/67/c8b3671b7bcf62b51fc3cb00a19bdeb8.jpg"
+  },
+])
