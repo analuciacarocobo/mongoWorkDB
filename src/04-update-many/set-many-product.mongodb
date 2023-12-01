@@ -1,0 +1,13 @@
+// con esta instruccion a los producto 
+//con la categoria juguetes inverta un atributo 
+// llamado inventary en su valor true
+db.products.updateMany(
+    // query
+    { category: "Juguetes" },
+    // update - operators
+    {
+      $set: {
+        inventary: true
+      }
+    }
+ )
